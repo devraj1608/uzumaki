@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page </title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            background: transparent;
+            align-content: center;
+         
+        }
+
+
+        .main{
+            background-image: url("img/naruto.png");
+            background-position: top 0 right -20px ;
+            height: 100vh;
+            width: 100%;
+            background-size: 450px;
+            background-repeat: no-repeat;
+            background-color: black;
+        }
+        
+        
+        .form{
+
+            width: 300px;
+            height: 380px;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 10px;
+           margin-top: -100px;
+        }
+        .form h2{
+           
+            width: 300px;
+            font-family: sans-serif;
+            text-align: center;
+            color: blue;
+            font-size:20px ;
+            background-color:#fff;
+            border-radius: 10px;
+            margin: 2px;
+            padding: 8px;
+        }
+        .form input{
+            width: 300px;
+            height: 30px;
+            background: transparent;
+            border-bottom:1px solid blue ;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            color: white;
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            font-family: sans-serif;
+        }
+        .form input:focus{
+            outline: none;
+        }
+        ::placeholder{
+            color: #fff;
+            font-family: Arial;
+        }
+        .btnn{
+            width: 300px;
+            height: 40px;
+            background: blue;
+            border: none;
+            margin-top: 30px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            color: #fff;
+        }
+        .btnn:hover{
+            background: #fff;
+            color: blue;
+            
+        }
+      
+        .form .link{
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:17px ;
+            padding-top:20px;
+          
+            text-align: center;
+            color: white;
+
+        }
+        .form.link a{
+            text-decoration:none;
+            color:blue;
+        }
+
+        .liw{
+            padding-top: 15px;
+            padding-bottom:10px ;
+            text-align: center;
+           
+            color: white;
+        }
+        .icons a{
+           
+            text-decoration: none;
+            color: #fff;
+        }
+        .icons ion-icon{
+            color: #fff;
+            font-size: 20px;
+            padding-left: 14px;
+            padding-top: 5px;
+            transition: 0.3s ease;
+        }
+        .icons ion-icon:hover{
+            color: blue;
+        }
+
+        .text h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 100px;
+            color: white;
+            align-content: center;
+            margin-top: -400px;
+            margin-left: 600px;
+        }
+        .text h2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            color: white;
+            align-content: center;
+            margin-left: 400px;
+        }
+        .logo h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 130px;
+            color: blue;
+            align-content: center;
+            margin-top: -230px;
+            margin-left: 420px;
+           
+        }
+         /* Responsive Styles */
+         @media (max-width: 1024px) { /* Tablet view */
+            body{
+                width: 100%;
+            }
+            .main {
+                background-size: 400px;
+                background-position: top 0 right 0;
+            }
+
+            .form {
+
+                width: 60%;
+            }
+            .form .link{
+                width: 50%;
+            }
+            .liw{
+                width: 50%;
+            }
+            .icons {
+               margin-left: -270px;
+            }
+           
+
+            .form h2 {
+                font-size: 20px;
+            }
+
+            .form input {
+                font-size: 14px;
+            }
+
+            .btnn {
+                font-size: 16px;
+            }
+
+            .text h1 {
+                font-size: 90px;
+                margin-left: 30px;
+                margin-top: -800px;
+              
+            }
+
+            .text h2 {
+                font-size: 50px;
+                margin-left: 30px;
+              
+            }
+
+            .logo h1 {
+                font-size: 90px;
+                margin-left: 30px;
+                margin-top: -650px;
+            }
+        }
+
+        @media (max-width: 480px) { /* Mobile view */
+            body{
+                width: 100%;
+            }
+            .main {
+                background-size: 150px;
+                background-position: top center;
+                
+                
+            }
+
+            .form {
+                width: 90%;
+                margin: 20px auto;
+                padding: 20px;
+            }
+
+            .form h2 {
+                font-size: 16px;
+            }
+
+            .form input {
+                font-size: 13px;
+            }
+
+            .btnn {
+                font-size: 14px;
+                height: 35px;
+            }
+
+            .text h1 {
+                font-size: 10px;
+                margin-left: 10px;
+                margin-top: -500px;
+               
+            }
+
+            .text h2 {
+                font-size: 10px;
+                margin-left: 10px;
+            }
+
+            .logo h1 {
+                font-size: 30px;
+                margin-left: 10px;
+                margin-top: -480px;
+            }
+        }
+        
+        
+
+        
+       
+    </style>
+</head>
+<body>
+        <div class="main">
+        <form action="" class="form">
+            <h2>Login Here</h2>
+            <input type="userName" name="user" placeholder="Enter User Name" id="username">
+            <input type="email" name="email" placeholder="Enter Email " id="email">
+            <input type="password" name="PWD" placeholder="Enter Password" id="">
+            <!-- <input type="password" name="confPWD" placeholder="Enter Confirm Password" id="confirmPassword"> -->
+            <button class="btnn" id="loginButton">Login</button>
+
+            <p class="link">Don't have an account<br>
+            <a href="Signup.html">Sign up</a> here</p>
+            <p class="liw">Log in with</p>
+
+            <center>
+                <div class="icons">
+                    <a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="https://www.google.com/"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="https://www.skype.com/"><ion-icon name="logo-skype"></ion-icon></a>
+                </div>
+          </center>
+
+        </form>
+
+        <div class="text">
+                <h1> Hi!</h1>
+                <h2>Welcome to the website</h2>
+               
+        </div>
+        <div class="logo">
+          <a href="index.html" style="text-decoration: none;"><h1>Uzumaki</h1></a>  
+        </div>
+
+    </div>
+  
+   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+   <script src="./login.js"></script>
+</body>
+</html>
